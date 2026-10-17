@@ -1,0 +1,43 @@
+{
+  "mode": "J2",
+  "seed": 202791,
+  "feature_dim": 211,
+  "state_dim": 15,
+  "hidden_dim": 64,
+  "bounds": {
+    "position": 1.25,
+    "degree": 1.0
+  },
+  "array_names": [
+    "feature.0.weight",
+    "feature.0.bias",
+    "feature.1.weight",
+    "feature.1.bias",
+    "state.0.weight",
+    "state.0.bias",
+    "state.2.weight",
+    "state.2.bias",
+    "position_score.weight",
+    "position_score.bias",
+    "degree_score.weight",
+    "degree_score.bias",
+    "position_film.weight",
+    "position_film.bias",
+    "degree_film.weight",
+    "degree_film.bias",
+    "position_head.0.weight",
+    "position_head.0.bias",
+    "position_head.1.weight",
+    "position_head.1.bias",
+    "position_head.3.weight",
+    "position_head.3.bias",
+    "degree_head.0.weight",
+    "degree_head.0.bias",
+    "degree_head.1.weight",
+    "degree_head.1.bias",
+    "degree_head.3.weight",
+    "degree_head.3.bias",
+    "normalization.center",
+    "normalization.scale"
+  ]
+}

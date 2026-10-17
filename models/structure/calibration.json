@@ -1,0 +1,51 @@
+{
+  "decoder": {
+    "id": "V10_C_pair_safe_softPlus__V12NG_shapeQ86",
+    "family": "component_tau_soft_hybrid",
+    "tau_U": 0.7818027366638185,
+    "tau_M": 0.8065315699577331,
+    "tau_R": 0.18369915313720714,
+    "tau_soft": 0.3008597636222839,
+    "gap12": 1.0922880918979645,
+    "gap23": 0.677932494878769,
+    "strict_role": "selected_primary",
+    "allowed_for_selection": true,
+    "source": "PB6 source-estimated component-threshold soft hybrid decoder; selected by V11 pair-safe source-only Pareto rule; V12 source-estimated normal guard from train normal margin distribution",
+    "source_pair_count3_target": 0.32,
+    "source_pair_triple_overlap_rate": 0.31473483522041945,
+    "complexity_level": 1.1600000000000001,
+    "v11_candidate_source": "V10 source-estimated candidate family",
+    "v12_candidate_source": "V11 candidate family without normal guard",
+    "v12_base_decoder_id": "V10_C_pair_safe_softPlus",
+    "normal_guard_mode": "shape_band",
+    "normal_guard_tag": "shapeQ86",
+    "normal_max_excess": 0.15203773260116576,
+    "normal_second_excess": -1.0143856287002564,
+    "normal_mean_excess": -0.7093753337860107,
+    "normal_source_stats": {
+      "normal_n": 6945.0,
+      "normal_max_q78": 0.13799645423889162,
+      "normal_max_q86": 0.15203773260116576,
+      "normal_max_q92": 0.16502807378768922,
+      "normal_second_q92": -1.0143856287002564,
+      "normal_mean_q90": -0.7093753337860107,
+      "fault_max_q08": 0.22346080780029298
+    },
+    "v12_selection_note": {
+      "selection_source": "train normal/single + generated pseudo pair/triple only",
+      "selection_rule": "normal-preserving pair-safe Pareto front, then source-only balanced score",
+      "real_compound_labels_used": false,
+      "historical_fixed_decoder_used_for_selection": false,
+      "source_score": 0.8517457203312712,
+      "source_rank": 1,
+      "source_terms": "{\"fault_to_normal\": 0.0010199184065274778, \"hard_pair_active\": 0.7267343485617598, \"inactive_fp\": 0.0447480489269098, \"mr_boundary_exact\": 0.9834101382488479, \"normal_count0\": 0.770194384449244, \"normal_guard\": \"shapeQ86\", \"pair_count2\": 0.8272051671141201, \"pair_count3\": 0.06696237500486363, \"pair_macro\": 0.7653431046722603, \"pair_to_normal\": 0.02400684798256877, \"pair_worst\": 0.5692936368943374, \"pseudo_MR\": 0.9752481027437244, \"single\": 0.9300548263831201, \"train_count1\": 0.9433765298776098}"
+    }
+  },
+  "source_reliability": {
+    "56": 0.7034453822015838,
+    "57": 0.7078609672179643,
+    "58": 0.6121794794649329,
+    "59": 0.7307475500888104,
+    "60": 0.694197007043072
+  }
+}

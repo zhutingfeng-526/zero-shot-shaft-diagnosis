@@ -1,0 +1,18 @@
+{
+  "spec": {
+    "id": "P4M_3_SharedBackgroundFactorized",
+    "role": "candidate",
+    "selectable": true,
+    "position_mode": "shared_background",
+    "degree_mode": "shared_background",
+    "shared": true,
+    "covariance_weight": 0.03,
+    "complexity_rank": 3,
+    "description": "Shared transient-suppressed background encoder with two heads."
+  },
+  "seed": 202741,
+  "hidden_dim": 48,
+  "shared": true,
+  "swa_start": 41,
+  "swa_count": 20
+}

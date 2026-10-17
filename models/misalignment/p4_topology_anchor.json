@@ -1,0 +1,20 @@
+{
+  "kind": "position_topology_residual",
+  "spec": {
+    "id": "P1_ZeroInitTopologyResidual",
+    "role": "candidate",
+    "selectable": true,
+    "trainable": true,
+    "complexity_rank": 1,
+    "identity_weight": 0.04,
+    "description": "Zero-init B1-B2-B3 graph residual over the locked P4M2 anchor."
+  },
+  "seed": 202741,
+  "feature_count": 102,
+  "hidden_dim": 32,
+  "topology_hidden_dim": 24,
+  "anchor_architecture": "P4M_2_RawSpatialPosition_PhysicsDegree",
+  "anchor_seed": 202741,
+  "swa_start": 41,
+  "swa_count": 20
+}

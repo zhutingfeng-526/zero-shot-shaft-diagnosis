@@ -1,0 +1,466 @@
+{
+  "schema": "impact.frozen.v1",
+  "arrays_file": "frozen_parameters.npz",
+  "arrays_sha256": "ca06d907240bd2ca9aac47085ca7dd5ecb59233d5933e11e6166afb8f664a524",
+  "model_tree": {
+    "models": {
+      "kind": "frozen",
+      "d2": {
+        "prototypes": {
+          "vibration_raw_rank1": {
+            "__array__": "impact__models__d2__prototypes__vibration_raw_rank1"
+          },
+          "acoustic_raw_rank1": {
+            "__array__": "impact__models__d2__prototypes__acoustic_raw_rank1"
+          }
+        },
+        "projective_temperature": 0.25
+      },
+      "endpoint": {
+        "prototypes": {
+          "vibration_raw_rank1": {
+            "__array__": "impact__models__endpoint__prototypes__vibration_raw_rank1"
+          },
+          "vibration_raw_rank2": {
+            "__array__": "impact__models__endpoint__prototypes__vibration_raw_rank2"
+          },
+          "acoustic_raw_rank1": {
+            "__array__": "impact__models__endpoint__prototypes__acoustic_raw_rank1"
+          }
+        },
+        "uniform_weight": {
+          "__array__": "impact__models__endpoint__uniform_weight"
+        },
+        "center_scale_weight": {
+          "__array__": "impact__models__endpoint__center_scale_weight"
+        },
+        "side_scale_weight": {
+          "__array__": "impact__models__endpoint__side_scale_weight"
+        },
+        "temperatures": {
+          "C1_RawRank1Factorized": {
+            "center": 0.01,
+            "side": 0.01
+          },
+          "C2_CenterRawRank12Factorized": {
+            "center": 0.01,
+            "side": 0.01
+          },
+          "C3_SourceReliableScaleFactorized": {
+            "center": 0.01,
+            "side": 0.01
+          }
+        },
+        "reliability": {
+          "center_q25": 0.1167767383158207,
+          "center_q75": 0.1740110069513321,
+          "maximum_factorized_weight": 0.75,
+          "minimum_factorized_weight": 0.25,
+          "side_q25": 0.11282112682238221,
+          "side_q75": 0.14308869885280728
+        }
+      },
+      "orbit": {
+        "classifier": {
+          "center": {
+            "__array__": "impact__models__orbit__classifier__center"
+          },
+          "scale": {
+            "__array__": "impact__models__orbit__classifier__scale"
+          },
+          "intercept": {
+            "__array__": "impact__models__orbit__classifier__intercept"
+          },
+          "coefficient": {
+            "__array__": "impact__models__orbit__classifier__coefficient"
+          },
+          "ridge": {
+            "__array__": "impact__models__orbit__classifier__ridge"
+          }
+        },
+        "gain": 1.0,
+        "cap": 4.0,
+        "kind": "plain"
+      },
+      "background": {
+        "time_operator": {
+          "__array__": "impact__models__background__time_operator"
+        },
+        "time_ridge": {
+          "__array__": "impact__models__background__time_ridge"
+        },
+        "time_condition": {
+          "__array__": "impact__models__background__time_condition"
+        },
+        "spectral_operator": {
+          "__array__": "impact__models__background__spectral_operator"
+        },
+        "spectral_ridge": {
+          "__array__": "impact__models__background__spectral_ridge"
+        },
+        "spectral_condition": {
+          "__array__": "impact__models__background__spectral_condition"
+        },
+        "long_spectral_operator": {
+          "__array__": "impact__models__background__long_spectral_operator"
+        },
+        "long_spectral_ridge": {
+          "__array__": "impact__models__background__long_spectral_ridge"
+        },
+        "long_spectral_condition": {
+          "__array__": "impact__models__background__long_spectral_condition"
+        }
+      },
+      "band": {
+        "union_selected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "orbit_selected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "acoustic_selected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "acoustic_models": {
+        "train_single": {
+          "prototypes": {
+            "vibration_raw_rank1": {
+              "__array__": "impact__models__acoustic_models__train_single__prototypes__vibration_raw_rank1"
+            },
+            "vibration_raw_rank2": {
+              "__array__": "impact__models__acoustic_models__train_single__prototypes__vibration_raw_rank2"
+            },
+            "acoustic_raw_rank1": {
+              "__array__": "impact__models__acoustic_models__train_single__prototypes__acoustic_raw_rank1"
+            }
+          }
+        },
+        "dev_single": {
+          "prototypes": {
+            "vibration_raw_rank1": {
+              "__array__": "impact__models__acoustic_models__dev_single__prototypes__vibration_raw_rank1"
+            },
+            "vibration_raw_rank2": {
+              "__array__": "impact__models__acoustic_models__dev_single__prototypes__vibration_raw_rank2"
+            },
+            "acoustic_raw_rank1": {
+              "__array__": "impact__models__acoustic_models__dev_single__prototypes__acoustic_raw_rank1"
+            }
+          }
+        },
+        "final_single": {
+          "prototypes": {
+            "vibration_raw_rank1": {
+              "__array__": "impact__models__acoustic_models__final_single__prototypes__vibration_raw_rank1"
+            },
+            "vibration_raw_rank2": {
+              "__array__": "impact__models__acoustic_models__final_single__prototypes__vibration_raw_rank2"
+            },
+            "acoustic_raw_rank1": {
+              "__array__": "impact__models__acoustic_models__final_single__prototypes__acoustic_raw_rank1"
+            }
+          }
+        }
+      },
+      "refractory_samples": 85,
+      "legacy_threshold": -0.5210351888090372
+    },
+    "n0": {
+      "center": {
+        "__array__": "impact__n0__center"
+      },
+      "scale": {
+        "__array__": "impact__n0__scale"
+      }
+    },
+    "detector": {
+      "id": "E2_PhaseResidual",
+      "mode": "phase_residual",
+      "hard_threshold": 4.801331517586351,
+      "tail_threshold": 2.1605991829138578,
+      "channel_scale": {
+        "__array__": "impact__detector__channel_scale"
+      }
+    }
+  },
+  "binding": "Frozen baseline, endpoint, orbit relation/background, and three source outer-fold acoustic prototype models",
+  "training_data_included": false,
+  "event_caches_included": false,
+  "normalizer_binding": "Frozen source-Normal fallback parameters; producer and consumer fitting functions verified AST-identical",
+  "array_schema": {
+    "impact__models__d2__prototypes__vibration_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__d2__prototypes__acoustic_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__endpoint__prototypes__vibration_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__endpoint__prototypes__vibration_raw_rank2": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__endpoint__prototypes__acoustic_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__endpoint__uniform_weight": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__endpoint__center_scale_weight": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__endpoint__side_scale_weight": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__orbit__classifier__center": {
+      "shape": [
+        12
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__orbit__classifier__scale": {
+      "shape": [
+        12
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__orbit__classifier__intercept": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__orbit__classifier__coefficient": {
+      "shape": [
+        12
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__orbit__classifier__ridge": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__background__time_operator": {
+      "shape": [
+        4,
+        2,
+        4
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__background__time_ridge": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__background__time_condition": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__background__spectral_operator": {
+      "shape": [
+        11,
+        2,
+        4
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__background__spectral_ridge": {
+      "shape": [
+        11
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__background__spectral_condition": {
+      "shape": [
+        11
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__background__long_spectral_operator": {
+      "shape": [
+        11,
+        2,
+        4
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__background__long_spectral_ridge": {
+      "shape": [
+        11
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__background__long_spectral_condition": {
+      "shape": [
+        11
+      ],
+      "dtype": "float32"
+    },
+    "impact__models__acoustic_models__train_single__prototypes__vibration_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__train_single__prototypes__vibration_raw_rank2": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__train_single__prototypes__acoustic_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__dev_single__prototypes__vibration_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__dev_single__prototypes__vibration_raw_rank2": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__dev_single__prototypes__acoustic_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__final_single__prototypes__vibration_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__final_single__prototypes__vibration_raw_rank2": {
+      "shape": [
+        3,
+        4,
+        6,
+        6
+      ],
+      "dtype": "complex64"
+    },
+    "impact__models__acoustic_models__final_single__prototypes__acoustic_raw_rank1": {
+      "shape": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "dtype": "complex64"
+    },
+    "impact__n0__center": {
+      "shape": [
+        10
+      ],
+      "dtype": "float32"
+    },
+    "impact__n0__scale": {
+      "shape": [
+        10
+      ],
+      "dtype": "float32"
+    },
+    "impact__detector__channel_scale": {
+      "shape": [
+        10
+      ],
+      "dtype": "float64"
+    }
+  }
+}

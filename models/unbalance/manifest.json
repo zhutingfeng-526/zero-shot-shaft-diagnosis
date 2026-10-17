@@ -1,0 +1,65 @@
+{
+  "method": "C0_K5_medianShift",
+  "members": [
+    {
+      "seed": 202731,
+      "state_file": "seed_202731.npz",
+      "sha256": "b7f9edbc402e46ca4a4992bbda396f3bcf02ca6df799c1239c30c007069d790f",
+      "spec": {
+        "id": "P3V3A2_2_ZeroGateBalancedSoftsignSWA",
+        "role": "candidate",
+        "model_type": "neural",
+        "boundary": "softsign",
+        "capacity_rank": 2
+      }
+    },
+    {
+      "seed": 202732,
+      "state_file": "seed_202732.npz",
+      "sha256": "2aa0d0588d73c9d4c86b877ee9e05128536415a539da0ef7b11d3d98d4a34037",
+      "spec": {
+        "id": "P3V3A2_2_ZeroGateBalancedSoftsignSWA",
+        "role": "candidate",
+        "model_type": "neural",
+        "boundary": "softsign",
+        "capacity_rank": 2
+      }
+    },
+    {
+      "seed": 202733,
+      "state_file": "seed_202733.npz",
+      "sha256": "8e148071cb940c07fd7f0607f36234a65848502f5fd882e3b4e68996ef55ad6d",
+      "spec": {
+        "id": "P3V3A2_2_ZeroGateBalancedSoftsignSWA",
+        "role": "candidate",
+        "model_type": "neural",
+        "boundary": "softsign",
+        "capacity_rank": 2
+      }
+    },
+    {
+      "seed": 202734,
+      "state_file": "seed_202734.npz",
+      "sha256": "c2767a24ed1ecde4a24aaebb09a5df92d31344bdb68edea108bf33b4ece02044",
+      "spec": {
+        "id": "P3V3A2_2_ZeroGateBalancedSoftsignSWA",
+        "role": "candidate",
+        "model_type": "neural",
+        "boundary": "softsign",
+        "capacity_rank": 2
+      }
+    },
+    {
+      "seed": 202735,
+      "state_file": "seed_202735.npz",
+      "sha256": "5571b9c07d1266bc713f0d181d7b4ad2b42f28aab53875e7d3b9240bc593042a",
+      "spec": {
+        "id": "P3V3A2_2_ZeroGateBalancedSoftsignSWA",
+        "role": "candidate",
+        "model_type": "neural",
+        "boundary": "softsign",
+        "capacity_rank": 2
+      }
+    }
+  ]
+}

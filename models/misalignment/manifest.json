@@ -1,0 +1,4402 @@
+{
+  "method": "P7E/E0_P4JorTV1 (default final); A1_P4JConfirmed (optional comparator)",
+  "files": [
+    {
+      "file": "background_a0.json",
+      "sha256": "9df9a2e4376e24b65cced702c9e6c9d9a8a33d059119e330d7ab905fa1479331",
+      "bytes": 6609
+    },
+    {
+      "file": "background_a0.npz",
+      "sha256": "808465c41d8f285850dc1a0a3176f9f5e2bf9e8cea464feeb423dab2b413338d",
+      "bytes": 448848,
+      "arrays": {
+        "node_type_embedding": {
+          "shape": [
+            6,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "energy_log_scale": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "station_encoder.net.0.weight": {
+          "shape": [
+            32,
+            102
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.0.weight": {
+          "shape": [
+            32,
+            95
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.0.weight": {
+          "shape": [
+            32,
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            133
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            123
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.0.weight": {
+          "shape": [
+            32,
+            904
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.0.weight": {
+          "shape": [
+            32,
+            239
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.source_token": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.reconstruct.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.reconstruct.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.0.weight": {
+          "shape": [
+            32,
+            192
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.2.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.2.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.0.weight": {
+          "shape": [
+            32,
+            75
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.2.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.2.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "background_feature_indices.npz",
+      "sha256": "72a9306aca2f735a5577e03edb9953b029b8a67ea923f67db7d1151a825cd5f1",
+      "bytes": 7207,
+      "arrays": {
+        "station_physics": {
+          "shape": [
+            3,
+            102
+          ],
+          "dtype": "int64"
+        },
+        "station_raw": {
+          "shape": [
+            3,
+            133
+          ],
+          "dtype": "int64"
+        },
+        "orbit_physics": {
+          "shape": [
+            95
+          ],
+          "dtype": "int64"
+        },
+        "orbit_raw": {
+          "shape": [
+            123
+          ],
+          "dtype": "int64"
+        },
+        "acoustic_physics": {
+          "shape": [
+            2,
+            38
+          ],
+          "dtype": "int64"
+        },
+        "acoustic_raw": {
+          "shape": [
+            2,
+            38
+          ],
+          "dtype": "int64"
+        },
+        "global_position": {
+          "shape": [
+            904
+          ],
+          "dtype": "int64"
+        },
+        "global_physics": {
+          "shape": [
+            312
+          ],
+          "dtype": "int64"
+        },
+        "global_residual": {
+          "shape": [
+            467
+          ],
+          "dtype": "int64"
+        },
+        "event_context": {
+          "shape": [
+            239
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    {
+      "file": "background_feature_normalizers.npz",
+      "sha256": "7534fe1e62612dcc33792b19627f70a3817b79fb1a305b5eed0c2ad88af86104",
+      "bytes": 23241,
+      "arrays": {
+        "station_physics_center": {
+          "shape": [
+            102
+          ],
+          "dtype": "float32"
+        },
+        "station_physics_scale": {
+          "shape": [
+            102
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_center": {
+          "shape": [
+            133
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_scale": {
+          "shape": [
+            133
+          ],
+          "dtype": "float32"
+        },
+        "orbit_physics_center": {
+          "shape": [
+            95
+          ],
+          "dtype": "float32"
+        },
+        "orbit_physics_scale": {
+          "shape": [
+            95
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_center": {
+          "shape": [
+            123
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_scale": {
+          "shape": [
+            123
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_physics_center": {
+          "shape": [
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_physics_scale": {
+          "shape": [
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_center": {
+          "shape": [
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_scale": {
+          "shape": [
+            38
+          ],
+          "dtype": "float32"
+        },
+        "global_position_center": {
+          "shape": [
+            904
+          ],
+          "dtype": "float32"
+        },
+        "global_position_scale": {
+          "shape": [
+            904
+          ],
+          "dtype": "float32"
+        },
+        "global_physics_center": {
+          "shape": [
+            312
+          ],
+          "dtype": "float32"
+        },
+        "global_physics_scale": {
+          "shape": [
+            312
+          ],
+          "dtype": "float32"
+        },
+        "global_residual_center": {
+          "shape": [
+            467
+          ],
+          "dtype": "float32"
+        },
+        "global_residual_scale": {
+          "shape": [
+            467
+          ],
+          "dtype": "float32"
+        },
+        "event_context_center": {
+          "shape": [
+            239
+          ],
+          "dtype": "float32"
+        },
+        "event_context_scale": {
+          "shape": [
+            239
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "background_feature_schema.json",
+      "sha256": "969945ef0d00b009e9edcba26f2766a95685033e4c7ea5ceebec6e3f00af2dc7",
+      "bytes": 64618
+    },
+    {
+      "file": "background_routing.json",
+      "sha256": "d6c77b4b50a0159df96d1bde2ea7d44d4785115130a0f36fa49da969767f7b41",
+      "bytes": 1311
+    },
+    {
+      "file": "background_routing.npz",
+      "sha256": "b135d7d264101d8e78870a6717b196d8cb8a24578573c683586310b809f16122",
+      "bytes": 100918,
+      "arrays": {
+        "null_target": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "alpha_raw": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "modality_index": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "native_mask": {
+          "shape": [
+            6,
+            4
+          ],
+          "dtype": "bool"
+        },
+        "native_attrs": {
+          "shape": [
+            6,
+            4,
+            9
+          ],
+          "dtype": "float32"
+        },
+        "modality_embedding.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.weight": {
+          "shape": [
+            32,
+            139
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "D2_T2YOnly.npz",
+      "sha256": "f8d9c0c752fcb19c55a7171cc6b4c9d121523a661ea403b86ec7a7675c013a40",
+      "bytes": 5393,
+      "arrays": {
+        "weight": {
+          "shape": [
+            5,
+            140
+          ],
+          "dtype": "float32"
+        },
+        "bias": {
+          "shape": [
+            5
+          ],
+          "dtype": "float32"
+        },
+        "center": {
+          "shape": [
+            140
+          ],
+          "dtype": "float32"
+        },
+        "scale": {
+          "shape": [
+            140
+          ],
+          "dtype": "float32"
+        },
+        "indices": {
+          "shape": [
+            140
+          ],
+          "dtype": "int64"
+        },
+        "view": {
+          "shape": [],
+          "dtype": "<U2"
+        },
+        "weight_decay": {
+          "shape": [],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "file": "p4_degree_anchor.json",
+      "sha256": "e25ff102ffb3a9fc117ff0dedec58f79210322a1fe5f93d9553976234f3255bc",
+      "bytes": 470
+    },
+    {
+      "file": "p4_degree_anchor.npz",
+      "sha256": "23e27d06a9870d8c262195b2636915ccae33bf378c0da593c884503e1f808e87",
+      "bytes": 171624,
+      "arrays": {
+        "shared_encoder.0.weight": {
+          "shape": [
+            48,
+            791
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.0.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.1.weight": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.1.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.3.weight": {
+          "shape": [
+            48,
+            48
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.3.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.4.weight": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "shared_encoder.4.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "position_head.weight": {
+          "shape": [
+            3,
+            48
+          ],
+          "dtype": "float32"
+        },
+        "position_head.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.weight": {
+          "shape": [
+            2,
+            48
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.bias": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32"
+        },
+        "meta.position_indices": {
+          "shape": [
+            791
+          ],
+          "dtype": "int32"
+        },
+        "meta.degree_indices": {
+          "shape": [
+            791
+          ],
+          "dtype": "int32"
+        },
+        "meta.position_center": {
+          "shape": [
+            791
+          ],
+          "dtype": "float64"
+        },
+        "meta.position_scale": {
+          "shape": [
+            791
+          ],
+          "dtype": "float64"
+        },
+        "meta.degree_center": {
+          "shape": [
+            791
+          ],
+          "dtype": "float64"
+        },
+        "meta.degree_scale": {
+          "shape": [
+            791
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "file": "p4_position_anchor.json",
+      "sha256": "bc0a1f416a7eeffd7ddf8dc2f76953272f8f78765aa1df45efdadf93eea8d104",
+      "bytes": 479
+    },
+    {
+      "file": "p4_position_anchor.npz",
+      "sha256": "d63304aa86e93cad10e23eade01b175a27cd5c8ac941fbf6d6be862b9e94bf93",
+      "bytes": 284648,
+      "arrays": {
+        "position_encoder.0.weight": {
+          "shape": [
+            48,
+            904
+          ],
+          "dtype": "float32"
+        },
+        "position_encoder.0.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "position_encoder.1.weight": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "position_encoder.1.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "degree_encoder.0.weight": {
+          "shape": [
+            48,
+            578
+          ],
+          "dtype": "float32"
+        },
+        "degree_encoder.0.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "degree_encoder.1.weight": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "degree_encoder.1.bias": {
+          "shape": [
+            48
+          ],
+          "dtype": "float32"
+        },
+        "position_head.weight": {
+          "shape": [
+            3,
+            48
+          ],
+          "dtype": "float32"
+        },
+        "position_head.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.weight": {
+          "shape": [
+            2,
+            48
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.bias": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32"
+        },
+        "meta.position_indices": {
+          "shape": [
+            904
+          ],
+          "dtype": "int32"
+        },
+        "meta.degree_indices": {
+          "shape": [
+            578
+          ],
+          "dtype": "int32"
+        },
+        "meta.position_center": {
+          "shape": [
+            904
+          ],
+          "dtype": "float64"
+        },
+        "meta.position_scale": {
+          "shape": [
+            904
+          ],
+          "dtype": "float64"
+        },
+        "meta.degree_center": {
+          "shape": [
+            578
+          ],
+          "dtype": "float64"
+        },
+        "meta.degree_scale": {
+          "shape": [
+            578
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "file": "p4_topology_anchor.json",
+      "sha256": "28da34b30f09f625ee2745238f827e0efbb892dfc814d5b213dd0adfea19c0a0",
+      "bytes": 553
+    },
+    {
+      "file": "p4_topology_anchor.npz",
+      "sha256": "2b6c342b0ac1c28698e6adb04e61d39dbd7036ae8ffedb3284f807b8480ce3a0",
+      "bytes": 25454,
+      "arrays": {
+        "coordinates": {
+          "shape": [
+            1,
+            3,
+            1
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.0.weight": {
+          "shape": [
+            32,
+            102
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.3.weight": {
+          "shape": [
+            24,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.3.bias": {
+          "shape": [
+            24
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.4.weight": {
+          "shape": [
+            24
+          ],
+          "dtype": "float32"
+        },
+        "node_encoder.4.bias": {
+          "shape": [
+            24
+          ],
+          "dtype": "float32"
+        },
+        "self_projection.weight": {
+          "shape": [
+            24,
+            24
+          ],
+          "dtype": "float32"
+        },
+        "neighbor_projection.weight": {
+          "shape": [
+            24,
+            24
+          ],
+          "dtype": "float32"
+        },
+        "coordinate_projection.weight": {
+          "shape": [
+            24,
+            1
+          ],
+          "dtype": "float32"
+        },
+        "residual_head.weight": {
+          "shape": [
+            1,
+            24
+          ],
+          "dtype": "float32"
+        },
+        "residual_head.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "meta.topology_triplets": {
+          "shape": [
+            3,
+            102
+          ],
+          "dtype": "int32"
+        },
+        "meta.topology_center": {
+          "shape": [
+            102
+          ],
+          "dtype": "float64"
+        },
+        "meta.topology_scale": {
+          "shape": [
+            102
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "file": "position_confirmer.json",
+      "sha256": "741adcd6515654ec2b3648841a192e35d5badd453a4ddad6e2887ec9b3bb19c3",
+      "bytes": 1311
+    },
+    {
+      "file": "position_confirmer.npz",
+      "sha256": "9cc63c776fff6c4f7ebed14a51e187262ee42c8a6d0d3a24340a473633e0ccb7",
+      "bytes": 100779,
+      "arrays": {
+        "null_target": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "alpha_raw": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "modality_index": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "native_mask": {
+          "shape": [
+            6,
+            4
+          ],
+          "dtype": "bool"
+        },
+        "native_attrs": {
+          "shape": [
+            6,
+            4,
+            9
+          ],
+          "dtype": "float32"
+        },
+        "modality_embedding.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.weight": {
+          "shape": [
+            32,
+            139
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "rotation_detectors.json",
+      "sha256": "20815552725b3821150a7e5f2a990b8ef864ab15988d8663d3842551e0c3aa82",
+      "bytes": 1290
+    },
+    {
+      "file": "rotation_residual.json",
+      "sha256": "4baed661477bd4c5bdbe1b15c0ab09683a31ba197d6762ceefc9f2da544c7be2",
+      "bytes": 1002
+    },
+    {
+      "file": "rotation_residual.npz",
+      "sha256": "0f06bd6addd546927ab579626f3b0fc6d939efffaffdc966561b80c8fff3e517",
+      "bytes": 127781,
+      "arrays": {
+        "feature.0.weight": {
+          "shape": [
+            211
+          ],
+          "dtype": "float32"
+        },
+        "feature.0.bias": {
+          "shape": [
+            211
+          ],
+          "dtype": "float32"
+        },
+        "feature.1.weight": {
+          "shape": [
+            64,
+            211
+          ],
+          "dtype": "float32"
+        },
+        "feature.1.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "state.0.weight": {
+          "shape": [
+            64,
+            15
+          ],
+          "dtype": "float32"
+        },
+        "state.0.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "state.2.weight": {
+          "shape": [
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "state.2.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_score.weight": {
+          "shape": [
+            1,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_score.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "degree_score.weight": {
+          "shape": [
+            1,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "degree_score.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "position_film.weight": {
+          "shape": [
+            128,
+            15
+          ],
+          "dtype": "float32"
+        },
+        "position_film.bias": {
+          "shape": [
+            128
+          ],
+          "dtype": "float32"
+        },
+        "degree_film.weight": {
+          "shape": [
+            128,
+            15
+          ],
+          "dtype": "float32"
+        },
+        "degree_film.bias": {
+          "shape": [
+            128
+          ],
+          "dtype": "float32"
+        },
+        "position_head.0.weight": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_head.0.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_head.1.weight": {
+          "shape": [
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_head.1.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_head.3.weight": {
+          "shape": [
+            3,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "position_head.3.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.0.weight": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.0.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.1.weight": {
+          "shape": [
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.1.bias": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.3.weight": {
+          "shape": [
+            2,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "degree_head.3.bias": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32"
+        },
+        "normalization.center": {
+          "shape": [
+            211
+          ],
+          "dtype": "float32"
+        },
+        "normalization.scale": {
+          "shape": [
+            211
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "synchronous_normal_reference.npz",
+      "sha256": "7598c090d389c51152b9d2834b8302789d18d49cab738251676e2d9176d2481d",
+      "bytes": 2142,
+      "arrays": {
+        "main_vib_inv": {
+          "shape": [
+            4,
+            6,
+            6
+          ],
+          "dtype": "complex128"
+        },
+        "main_orbit_inv": {
+          "shape": [
+            4,
+            2,
+            2
+          ],
+          "dtype": "complex128"
+        }
+      }
+    },
+    {
+      "file": "T2_VibOrbitCORS.npz",
+      "sha256": "fa7e43ded6d264810885da06aab30ff4c62025517706fd7ced59c8fabb61ae0a",
+      "bytes": 13557,
+      "arrays": {
+        "weight": {
+          "shape": [
+            5,
+            441
+          ],
+          "dtype": "float32"
+        },
+        "bias": {
+          "shape": [
+            5
+          ],
+          "dtype": "float32"
+        },
+        "center": {
+          "shape": [
+            441
+          ],
+          "dtype": "float32"
+        },
+        "scale": {
+          "shape": [
+            441
+          ],
+          "dtype": "float32"
+        },
+        "indices": {
+          "shape": [
+            441
+          ],
+          "dtype": "int64"
+        },
+        "view": {
+          "shape": [],
+          "dtype": "<U2"
+        },
+        "weight_decay": {
+          "shape": [],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "file": "tv1_a0_202762.json",
+      "sha256": "950b8d510129f1b63fb2de75cba05f6eedbc0be0e6e499d8357b3c8c843b3ea8",
+      "bytes": 6610
+    },
+    {
+      "file": "tv1_a0_202762.npz",
+      "sha256": "ec7a53c88787e1a358da88e542f3e917b1ddc7158bb3a1699c7272cf37538585",
+      "bytes": 448841,
+      "arrays": {
+        "node_type_embedding": {
+          "shape": [
+            6,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "energy_log_scale": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "station_encoder.net.0.weight": {
+          "shape": [
+            32,
+            102
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.0.weight": {
+          "shape": [
+            32,
+            95
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.0.weight": {
+          "shape": [
+            32,
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            133
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            123
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.0.weight": {
+          "shape": [
+            32,
+            904
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.0.weight": {
+          "shape": [
+            32,
+            239
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.source_token": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.reconstruct.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.reconstruct.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.0.weight": {
+          "shape": [
+            32,
+            192
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.2.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.2.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.0.weight": {
+          "shape": [
+            32,
+            75
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.2.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.2.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "tv1_a0_202763.json",
+      "sha256": "e06cb07d23af3bb6dd50011da0fc7a18454478fd7a0d970f8147a9b900c819da",
+      "bytes": 6610
+    },
+    {
+      "file": "tv1_a0_202763.npz",
+      "sha256": "60b7b73470ca65044253ee5167fabbbfd6d8cc1c8dcbc0cb76e47a6ffa7cd3ba",
+      "bytes": 448603,
+      "arrays": {
+        "node_type_embedding": {
+          "shape": [
+            6,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "energy_log_scale": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "station_encoder.net.0.weight": {
+          "shape": [
+            32,
+            102
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.0.weight": {
+          "shape": [
+            32,
+            95
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.0.weight": {
+          "shape": [
+            32,
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            133
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "station_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            123
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "orbit_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.0.weight": {
+          "shape": [
+            32,
+            38
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "acoustic_raw_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.0.weight": {
+          "shape": [
+            32,
+            904
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "global_position_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.0.weight": {
+          "shape": [
+            32,
+            239
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.3.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.3.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.4.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "event_encoder.net.4.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "node_quality.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.source_token": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_refine.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_1.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.mechanical_2.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.1.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.relation.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.dynamic_gate.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.0.weight": {
+          "shape": [
+            32,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.1.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.update.1.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.norm.weight": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.observation_predict.norm.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.reconstruct.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "transport.reconstruct.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.0.weight": {
+          "shape": [
+            32,
+            192
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.2.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diff_head.2.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.0.weight": {
+          "shape": [
+            32,
+            75
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.2.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "position_residual.2.bias": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "tv1_routing_202762.json",
+      "sha256": "b00daa4dcff42cf1f1c6b4663636c28230ab5ce926e0cd6049c7156d56d236b8",
+      "bytes": 1311
+    },
+    {
+      "file": "tv1_routing_202762.npz",
+      "sha256": "5ed0e192a060899882f70c6a17d9579bb3c4f55394f0f5d355d7f1722ef9ddf1",
+      "bytes": 100961,
+      "arrays": {
+        "null_target": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "alpha_raw": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "modality_index": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "native_mask": {
+          "shape": [
+            6,
+            4
+          ],
+          "dtype": "bool"
+        },
+        "native_attrs": {
+          "shape": [
+            6,
+            4,
+            9
+          ],
+          "dtype": "float32"
+        },
+        "modality_embedding.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.weight": {
+          "shape": [
+            32,
+            139
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "file": "tv1_routing_202763.json",
+      "sha256": "62110d27058d0ac17772dcf6b7c5e3c8d2b9b8e94b094d64b9de717c4b4791eb",
+      "bytes": 1311
+    },
+    {
+      "file": "tv1_routing_202763.npz",
+      "sha256": "b41020ca8ba6b165dbef3db6b2c1bd08331e6ae9d6b1fc6c5071067a189bfa53",
+      "bytes": 100923,
+      "arrays": {
+        "null_target": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "alpha_raw": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "modality_index": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "native_mask": {
+          "shape": [
+            6,
+            4
+          ],
+          "dtype": "bool"
+        },
+        "native_attrs": {
+          "shape": [
+            6,
+            4,
+            9
+          ],
+          "dtype": "float32"
+        },
+        "modality_embedding.weight": {
+          "shape": [
+            3,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.0.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.1.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "predictors.2.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "route_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "route_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.weight": {
+          "shape": [
+            32,
+            139
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "reliability_net.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.weight": {
+          "shape": [
+            32,
+            137
+          ],
+          "dtype": "float32"
+        },
+        "message_net.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.weight": {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "message_net.2.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.weight": {
+          "shape": [
+            32,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "score_head.0.bias": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.weight": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "float32"
+        },
+        "score_head.2.bias": {
+          "shape": [
+            1
+          ],
+          "dtype": "float32"
+        }
+      }
+    }
+  ],
+  "archive_policy": "Only weights, source aggregate calibration, ordered feature names and indices. No sample signals/features/predictions/labels.",
+  "shared_models": "../structure/epoch_056.npz through epoch_060.npz; same frozen K5 lineage",
+  "missing_inference_assets": [],
+  "full_training_orchestrator_available": false
+}

@@ -1,0 +1,18 @@
+{
+  "spec": {
+    "id": "P4M_2_RawSpatialPosition_PhysicsDegree",
+    "role": "candidate",
+    "selectable": true,
+    "position_mode": "raw_spatial_position",
+    "degree_mode": "persistent_degree",
+    "shared": false,
+    "covariance_weight": 0.02,
+    "complexity_rank": 2,
+    "description": "Spatial/raw-shape position view plus persistent degree view."
+  },
+  "seed": 202741,
+  "hidden_dim": 48,
+  "shared": false,
+  "swa_start": 41,
+  "swa_count": 20
+}
