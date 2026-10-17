@@ -1,0 +1,54 @@
+{
+  "schema": "impact.config.v1",
+  "sample_rate_hz": 5000,
+  "buffer_seconds": 9.6,
+  "buffer_samples": 48000,
+  "channel_order": [
+    "B1_x",
+    "B1_y",
+    "B2_x",
+    "B2_y",
+    "B3_x",
+    "B3_y",
+    "orbit_x",
+    "orbit_y",
+    "acoustic_A",
+    "acoustic_B"
+  ],
+  "normalization_id": "N1_trailing_robust",
+  "minimum_local_valid_samples": 1024,
+  "maturity_radius_samples": 512,
+  "time_scales_ms": [
+    4,
+    12,
+    32,
+    80
+  ],
+  "primary_scale_index": 1,
+  "minimum_c2_events": 12,
+  "duplicate_tolerance_samples": 1,
+  "detector_args": {
+    "detector_chunk_samples": 6000,
+    "detector_chunk_overlap": 3000,
+    "event_close_gap": 12,
+    "event_min_samples": 3,
+    "core_expand": 3,
+    "tail_smooth_samples": 17,
+    "tail_settle_samples": 24,
+    "tail_max_rotations": 1.25,
+    "rpm_span_max": 20
+  },
+  "legacy_threshold": -0.5210351888090372,
+  "class_names": [
+    "I0",
+    "I1",
+    "I2"
+  ],
+  "refractory_samples": 85,
+  "legacy_class_names": [
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "not_ready_behavior": "uniform probabilities, ready false; retained legacy apply_c2 argmax=0 must be ignored when ready=false"
+}

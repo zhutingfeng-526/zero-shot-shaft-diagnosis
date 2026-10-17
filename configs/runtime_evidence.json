@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "purpose": "Environment evidence, not an inference configuration or an installable environment lock",
+  "records": [
+    {
+      "id": "selected_structure_training_preflight",
+      "scope": "Selected structure training run; not final inference",
+      "source_file": "audit/design_preflight.json",
+      "source_sha256": "7c65610dabc05b4e02e8166168237ed8f4c024ae158462130153b925108dce90",
+      "python": "3.8.20",
+      "numpy": "1.24.4",
+      "torch": "2.1.2",
+      "gpu": "NVIDIA RTX A4000",
+      "platform": "Linux-6.8.0-40-generic-x86_64-with-glibc2.17"
+    },
+    {
+      "id": "related_new_seed_training_environment",
+      "scope": "Related new-seed training audit, not the selected final inference receipt",
+      "source_file": "audit/environment_manifest.json",
+      "source_sha256": "21fcedc363052ce6e39399a14b5a3ea8c4d2eec8d9a934900815ddc3efa540e1",
+      "python": "3.8.20",
+      "numpy": "1.24.4",
+      "torch": "2.1.2",
+      "cuda_build": "11.8",
+      "cudnn_version": 8700,
+      "gpu": "NVIDIA RTX A4000"
+    },
+    {
+      "id": "related_replayable_training_preflight",
+      "scope": "Related replayable-training audit, not final inference",
+      "source_file": "audit/preflight.json",
+      "source_sha256": "c14593f816aee85ede0b93dc6550ebcad7c7e1d5e1cb810b6747341114506eee",
+      "torch": "2.1.2",
+      "cuda_build": "11.8",
+      "cudnn_version": 8700
+    },
+    {
+      "id": "final_dense_window_inference_preflight",
+      "scope": "Final dense window evidence generation",
+      "source_file": "audit/preflight_report.json",
+      "source_sha256": "b68b949ca2e843de08786cc0b2b254734175fd196d5e8e665cd57d743d10324c",
+      "gpu": "NVIDIA RTX A4000",
+      "exact_torch_cuda_cudnn_driver_lock_recovered": false,
+      "runtime_tf32_and_determinism_flags_captured": false
+    },
+    {
+      "id": "related_old_runner_control_flags",
+      "scope": "Runtime flags measured in a related old-runner control; not final dense inference",
+      "source_file": "EO0_exactLegacy_A/worker_preflight.json",
+      "source_sha256": "f3132ca52b651063301f2dbaf4c69ef02e87ab910303702c61f40bf073a45ec1",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "deterministic_algorithms": false
+    }
+  ],
+  "training_source_contract": {
+    "scope": "Selected structure training configuration and reachable source; not final inference runtime flags",
+    "use_amp": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "child_CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "training_runner_sha256": "82634d74e0fecef4c1c08dc2766c7f53903e68c3cd704e8153b97a2039d29ccf",
+    "training_function_source_sha256": "cab9034ee16bc226fd6b24340264780e0665c371b20fd8f2d2bb463b5eaf97cf"
+  },
+  "inference_source_contract": {
+    "structure_cuda_autocast": true,
+    "m_shared_k5_cuda_autocast": true,
+    "other_m_networks_use_explicit_autocast": false,
+    "u_networks_use_explicit_autocast": false,
+    "cuda_autocast_default_target": "float16",
+    "tf32_or_determinism_profile_automatically_applied_by_release": false,
+    "historical_dense_model_batch_size": 256,
+    "historical_sparse_model_batch_size": 2048,
+    "release_system_default_batch_size": 16
+  },
+  "local_validation_environment": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "scipy": "1.10.1",
+    "torch": "1.11.0+cu113",
+    "cuda_build": "11.3",
+    "cudnn_version": 8200,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "os": "Windows",
+    "historical_environment": false
+  }
+}

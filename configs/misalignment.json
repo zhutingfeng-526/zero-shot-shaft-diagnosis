@@ -1,0 +1,53 @@
+{
+  "endpoint": "P7E/E0_P4JorTV1",
+  "default_position_mode": "final",
+  "optional_position_mode": {
+    "a1": "P7E/A1_P4JConfirmed"
+  },
+  "tv1_members": [
+    202761,
+    202762,
+    202763
+  ],
+  "degree_anchor": "P7D/A2 = P7C/C7_D2T2HardQ20W050",
+  "orbit_q20": 0.981577706336975,
+  "synchronous_degree_mix_d2": 0.5,
+  "position_classes": [
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "degree_classes": [
+    "D0",
+    "D1"
+  ],
+  "raw_shape": [
+    "N",
+    10,
+    6000
+  ],
+  "sample_rate_hz": 5000,
+  "phase_quality_columns": [
+    "estimated_rpm",
+    "rpm_iqr",
+    "cycle_coverage",
+    "monotonic_fraction",
+    "orbit_coherence",
+    "vibration_coherence",
+    "cross_phase_residual",
+    "phase_valid",
+    "fallback_nominal"
+  ],
+  "raw_end_to_end_supported": true,
+  "raw_inference_entry": "MisalignmentExpert.predict(raw, rpm)",
+  "requires_shared_structure_weights": [
+    "epoch_056.npz",
+    "epoch_057.npz",
+    "epoch_058.npz",
+    "epoch_059.npz",
+    "epoch_060.npz"
+  ],
+  "requires_structure_prototypes": false,
+  "missing_interfaces": [],
+  "training_scope": "Exact synchronous linear trainer; P4ZF prepared-environment trainer; P4J core adapter objective; source normalization and quantiles. Historical full training orchestration, source fold selection, baseline pretraining and raw event augmentation orchestration are not supplied."
+}

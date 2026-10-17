@@ -1,0 +1,28 @@
+{
+  "sampling_rate_hz": 5000,
+  "window_samples": 6000,
+  "hop_samples": 150,
+  "horizon_seconds": 9.6,
+  "horizon_windows": 281,
+  "physics_stride_windows": 10,
+  "physics_pool_points": 29,
+  "structures": [
+    "N",
+    "U",
+    "M",
+    "I",
+    "UM",
+    "UI",
+    "MI",
+    "UMI"
+  ],
+  "presence_model": "models/integration/presence.npz",
+  "presence_model_sha256": "e1e417b22502a59cb8b0c7435d70f346451cb786ccd651f330b26843a5e84b3f",
+  "presence_weight": 0.25,
+  "safe_switch_margin": 0.0010241158407142403,
+  "temporal_scale": 8.986321393945389,
+  "position_winsor_fraction": 0.1,
+  "degree_huber_c": 1.345,
+  "degree_huber_iterations": 6,
+  "degree_low_quality_weight": 0.5
+}

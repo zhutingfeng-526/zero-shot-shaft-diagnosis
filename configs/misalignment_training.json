@@ -1,0 +1,37 @@
+{
+  "routing_adapter": {
+    "epochs": 60,
+    "swa_start": 46,
+    "batch_size": 64,
+    "hidden_dim": 32,
+    "learning_rate": 0.0006,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "proposal_weight": 0.25,
+    "identity_weight": 0.03,
+    "anchor_preserve_weight": 0.08,
+    "stress_consistency_weight": 0.06,
+    "minimal_intervention_weight": 0.004,
+    "reconstruction_weight": 0.02,
+    "stress_every": 2
+  },
+  "rotation_residual": {
+    "p4zf_development_seed": 202791,
+    "p4zf_confirmation_seeds": "202792,202793",
+    "p4zf_epochs": 60,
+    "p4zf_swa_start": 46,
+    "p4zf_hidden_dim": 64,
+    "p4zf_batch_size": 36,
+    "p4zf_learning_rate": 0.0002,
+    "p4zf_weight_decay": 0.0001,
+    "p4zf_grad_clip": 5.0,
+    "p4zf_vrex_weight": 0.08,
+    "p4zf_consistency_weight": 0.1,
+    "p4zf_anchor_weight": 0.12,
+    "p4zf_residual_weight": 0.015,
+    "p4zf_logit_noise_factor": 0.45,
+    "p4zf_log_every": 5
+  },
+  "full_training_orchestrator_available": false,
+  "quantile_calibration": "Filter source-M train+audit phase_valid >= 0.5 and fallback_nominal < 0.5; use orbit_coherence q20 via quantile_map; keep source-only fold/stability certification before freezing."
+}

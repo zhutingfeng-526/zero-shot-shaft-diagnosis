@@ -1,0 +1,18 @@
+{
+  "method": "C0_K5_medianShift",
+  "seeds": [
+    202731,
+    202732,
+    202733,
+    202734,
+    202735
+  ],
+  "sampling_hz": 5000.0,
+  "phase_bins": 64,
+  "ordinal_slope": 4.0,
+  "input_channels": 10,
+  "companion_I_uses_median_transport": true,
+  "other_contexts_use_raw_anchor": true,
+  "training_entry_available": false,
+  "training_loss_available": true
+}

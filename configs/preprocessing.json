@@ -1,0 +1,21 @@
+{
+  "input_stage": "synchronized acquisition-export amplitudes",
+  "acquisition_hz": 10000,
+  "record_selection": "last 300 seconds before decimation",
+  "sample_rate_hz": 5000,
+  "decimation": {"q": 2, "method": "scipy.signal.decimate", "ftype": "fir", "zero_phase": true, "fallback_cutoff_hz": 2200.0, "fallback_taps": 401},
+  "filter_spec_hash": "8b0189e0d2",
+  "filter_scope": "complete record before window selection",
+  "filter": {
+    "vibration": {"median_size": 3, "fc_baseline": 2.0, "polyorder": 3, "gauss_sigma": 0.0, "demean": true},
+    "orbit": {"use_sg_baseline": true, "fc_baseline": 0.2, "polyorder": 3, "median_size": 0, "sg_pad_enable": true, "sg_pad_len": null, "sg_pad_mult": 1.0, "sg_pad_mode": "reflect", "demean": true, "hp_cutoff_hz": 0.0, "hp_order": 2, "lp_cutoff_hz": 500.0, "lp_order": 4},
+    "acoustic": {"median_size": 3, "fc_baseline": 2.0, "polyorder": 3, "gauss_sigma": 0.0, "demean": true}
+  },
+  "channel_order": ["bearing1_x", "bearing1_y", "bearing2_x", "bearing2_y", "bearing3_x", "bearing3_y", "shaft_orbit_x", "shaft_orbit_y", "sound_A_bearing1_side", "sound_B_bearing3_side"],
+  "channel_units": "inherited acquisition-export units; no gain or unit conversion is defined by the frozen preprocessing scripts",
+  "window_samples": 6000,
+  "hop_samples": 150,
+  "raw_norm": "none",
+  "storage_dtype": "float16",
+  "model_dtype": "float32"
+}
