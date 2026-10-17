@@ -1,0 +1,791 @@
+{
+  "schema_version": 1,
+  "release": "2026-10-17",
+  "status": "runnable_sampled_raw_inference_verified",
+  "verification_scope": "Previously checked four sampled 9.6 s real histories. Environment reporting and independent frozen endpoint re-scoring are separate checks; not a full-dataset raw inference rerun.",
+  "sampled_final_labels_match": true,
+  "historical_gpu_scores_bitwise_identical": false,
+  "verified_environment": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "scipy": "1.10.1",
+    "torch": "1.11.0+cu113",
+    "devices": [
+      "CPU",
+      "CUDA"
+    ]
+  },
+  "missing_required_assets": [],
+  "licensing": {
+    "status": "effective",
+    "license_file": "LICENSE",
+    "effective": true,
+    "effective_date": "2026-10-17",
+    "rights_and_licensing_authority_confirmed": true,
+    "public_release_approval_confirmed": true,
+    "license": "Non-Commercial Research License (custom)",
+    "copyright_holders": [
+      "Tingfeng Zhu"
+    ],
+    "experimental_data_covered": false,
+    "third_party_components_covered": false
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 95,
+      "sha256": "c9942b3e5c6589b3e28fb2e3f894351b1996bf3f704423e43f86bfc54991b544"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 543,
+      "sha256": "c51369041ace268e3af15a53e6301ab443a2daa388ebab85cde7d823ac868468"
+    },
+    {
+      "path": "configs/impact.json",
+      "bytes": 1199,
+      "sha256": "9939d51de2c58369c16c9f0f56d8ff33b7cf1109d77361726630d2f55dea02a6"
+    },
+    {
+      "path": "configs/integration.json",
+      "bytes": 712,
+      "sha256": "198927ab3111e191b3074950d3f7c0eebc695d992f12f9c60034f2ff37f188bf"
+    },
+    {
+      "path": "configs/misalignment.json",
+      "bytes": 1411,
+      "sha256": "a81d0b373072fa415c55c52db695bb65c32d7d0c0ccbf3237d3008610f1ed7f8"
+    },
+    {
+      "path": "configs/misalignment_training.json",
+      "bytes": 1230,
+      "sha256": "36b8d3eec01f97c1f3e9be9155a3d665850eb591640dd2a0e5414317836a12be"
+    },
+    {
+      "path": "configs/preprocessing.json",
+      "bytes": 1382,
+      "sha256": "7f5b0f0ad7ea58200beff8f0f2c645a85762836be67595f2a9889e00c527ccf1"
+    },
+    {
+      "path": "configs/regression/frozen_endpoint_reference.json",
+      "bytes": 10997,
+      "sha256": "ec62a4ec61a3ebfa1ce779191b3ab7ce6641f3d778190bbf353c51db3b56a83b"
+    },
+    {
+      "path": "configs/regression/synthetic_reference.json",
+      "bytes": 21685,
+      "sha256": "98ad494738055dc65b21675d9442f09c5686cd1ec188c57b14dc10f37955cbdb"
+    },
+    {
+      "path": "configs/runtime_evidence.json",
+      "bytes": 3704,
+      "sha256": "f519ae6efd48a3bc84d74984791fc91bd8ffcb4bbaeb71ff037eaa1d83f51456"
+    },
+    {
+      "path": "configs/structure.json",
+      "bytes": 781,
+      "sha256": "358884612f71383da85a48a311554e8567feba2c21a179d6acd8adfbbadc7011"
+    },
+    {
+      "path": "configs/structure_training.json",
+      "bytes": 1509,
+      "sha256": "d22bc6c7100d20056e73fabe50daf620d75b81b80744327c9a8235175cba3371"
+    },
+    {
+      "path": "configs/unbalance.json",
+      "bytes": 380,
+      "sha256": "9dc087952a4c3fe707985f306966131c4e57f9e0979b82b16e50cc691f8acd48"
+    },
+    {
+      "path": "configs/unbalance_training.json",
+      "bytes": 371,
+      "sha256": "c34eee42ff6dcf29b2552001897757cffef3736e931d35c91a89a073de8b7da7"
+    },
+    {
+      "path": "docs/ENVIRONMENT.md",
+      "bytes": 5810,
+      "sha256": "30e38837267b4a76e1c6316ae7b9de558995bd0d8d96b20746dfb95b96bf3184"
+    },
+    {
+      "path": "docs/INPUTS.md",
+      "bytes": 6773,
+      "sha256": "7adca8faad0311ca5ac5e2f7a2ff92798ce0cc5dddc81163784b09e28d4b2e18"
+    },
+    {
+      "path": "docs/INSTALL.md",
+      "bytes": 3039,
+      "sha256": "18794d462f98f8168640478f0519c6862da95907298ec226699ee9eeb586a1cb"
+    },
+    {
+      "path": "docs/REGRESSION.md",
+      "bytes": 4368,
+      "sha256": "13d510418a204f74ea7925547684d6d4db18ea4bdcef65457a2ee7ba3de7137d"
+    },
+    {
+      "path": "docs/REQUIRED_ASSETS.md",
+      "bytes": 1229,
+      "sha256": "87b38fdd2350a9bdc46420be9aba53a8fe3d2e6d59c1cae2f4425fff3e0dba57"
+    },
+    {
+      "path": "models/impact/frozen_parameters.npz",
+      "bytes": 33040,
+      "sha256": "ca06d907240bd2ca9aac47085ca7dd5ecb59233d5933e11e6166afb8f664a524"
+    },
+    {
+      "path": "models/impact/manifest.json",
+      "bytes": 12175,
+      "sha256": "7ad60b8bc44659813c06b3171c44d263e4daad9b2c9af81acb298eca47eb6d32"
+    },
+    {
+      "path": "models/impact/MODEL_CARD.md",
+      "bytes": 3194,
+      "sha256": "44169602e6b0eb1ff26115b525adfdffa511f9969688ccbfec923d6d4db8818b"
+    },
+    {
+      "path": "models/integration/presence.npz",
+      "bytes": 3322,
+      "sha256": "e1e417b22502a59cb8b0c7435d70f346451cb786ccd651f330b26843a5e84b3f"
+    },
+    {
+      "path": "models/misalignment/background_a0.json",
+      "bytes": 6609,
+      "sha256": "9df9a2e4376e24b65cced702c9e6c9d9a8a33d059119e330d7ab905fa1479331"
+    },
+    {
+      "path": "models/misalignment/background_a0.npz",
+      "bytes": 448848,
+      "sha256": "808465c41d8f285850dc1a0a3176f9f5e2bf9e8cea464feeb423dab2b413338d"
+    },
+    {
+      "path": "models/misalignment/background_feature_indices.npz",
+      "bytes": 7207,
+      "sha256": "72a9306aca2f735a5577e03edb9953b029b8a67ea923f67db7d1151a825cd5f1"
+    },
+    {
+      "path": "models/misalignment/background_feature_normalizers.npz",
+      "bytes": 23241,
+      "sha256": "7534fe1e62612dcc33792b19627f70a3817b79fb1a305b5eed0c2ad88af86104"
+    },
+    {
+      "path": "models/misalignment/background_feature_schema.json",
+      "bytes": 64618,
+      "sha256": "969945ef0d00b009e9edcba26f2766a95685033e4c7ea5ceebec6e3f00af2dc7"
+    },
+    {
+      "path": "models/misalignment/background_routing.json",
+      "bytes": 1311,
+      "sha256": "d6c77b4b50a0159df96d1bde2ea7d44d4785115130a0f36fa49da969767f7b41"
+    },
+    {
+      "path": "models/misalignment/background_routing.npz",
+      "bytes": 100918,
+      "sha256": "b135d7d264101d8e78870a6717b196d8cb8a24578573c683586310b809f16122"
+    },
+    {
+      "path": "models/misalignment/D2_T2YOnly.npz",
+      "bytes": 5393,
+      "sha256": "f8d9c0c752fcb19c55a7171cc6b4c9d121523a661ea403b86ec7a7675c013a40"
+    },
+    {
+      "path": "models/misalignment/manifest.json",
+      "bytes": 99915,
+      "sha256": "b93ce32a9481d9340cb4d1bdbabc6d44873c6de3f1ce68cfaf6506cd6dd83479"
+    },
+    {
+      "path": "models/misalignment/p4_degree_anchor.json",
+      "bytes": 470,
+      "sha256": "e25ff102ffb3a9fc117ff0dedec58f79210322a1fe5f93d9553976234f3255bc"
+    },
+    {
+      "path": "models/misalignment/p4_degree_anchor.npz",
+      "bytes": 171624,
+      "sha256": "23e27d06a9870d8c262195b2636915ccae33bf378c0da593c884503e1f808e87"
+    },
+    {
+      "path": "models/misalignment/p4_position_anchor.json",
+      "bytes": 479,
+      "sha256": "bc0a1f416a7eeffd7ddf8dc2f76953272f8f78765aa1df45efdadf93eea8d104"
+    },
+    {
+      "path": "models/misalignment/p4_position_anchor.npz",
+      "bytes": 284648,
+      "sha256": "d63304aa86e93cad10e23eade01b175a27cd5c8ac941fbf6d6be862b9e94bf93"
+    },
+    {
+      "path": "models/misalignment/p4_topology_anchor.json",
+      "bytes": 553,
+      "sha256": "28da34b30f09f625ee2745238f827e0efbb892dfc814d5b213dd0adfea19c0a0"
+    },
+    {
+      "path": "models/misalignment/p4_topology_anchor.npz",
+      "bytes": 25454,
+      "sha256": "2b6c342b0ac1c28698e6adb04e61d39dbd7036ae8ffedb3284f807b8480ce3a0"
+    },
+    {
+      "path": "models/misalignment/position_confirmer.json",
+      "bytes": 1311,
+      "sha256": "741adcd6515654ec2b3648841a192e35d5badd453a4ddad6e2887ec9b3bb19c3"
+    },
+    {
+      "path": "models/misalignment/position_confirmer.npz",
+      "bytes": 100779,
+      "sha256": "9cc63c776fff6c4f7ebed14a51e187262ee42c8a6d0d3a24340a473633e0ccb7"
+    },
+    {
+      "path": "models/misalignment/rotation_detectors.json",
+      "bytes": 1290,
+      "sha256": "20815552725b3821150a7e5f2a990b8ef864ab15988d8663d3842551e0c3aa82"
+    },
+    {
+      "path": "models/misalignment/rotation_residual.json",
+      "bytes": 1002,
+      "sha256": "4baed661477bd4c5bdbe1b15c0ab09683a31ba197d6762ceefc9f2da544c7be2"
+    },
+    {
+      "path": "models/misalignment/rotation_residual.npz",
+      "bytes": 127781,
+      "sha256": "0f06bd6addd546927ab579626f3b0fc6d939efffaffdc966561b80c8fff3e517"
+    },
+    {
+      "path": "models/misalignment/synchronous_normal_reference.npz",
+      "bytes": 2142,
+      "sha256": "7598c090d389c51152b9d2834b8302789d18d49cab738251676e2d9176d2481d"
+    },
+    {
+      "path": "models/misalignment/T2_VibOrbitCORS.npz",
+      "bytes": 13557,
+      "sha256": "fa7e43ded6d264810885da06aab30ff4c62025517706fd7ced59c8fabb61ae0a"
+    },
+    {
+      "path": "models/misalignment/tv1_a0_202762.json",
+      "bytes": 6610,
+      "sha256": "950b8d510129f1b63fb2de75cba05f6eedbc0be0e6e499d8357b3c8c843b3ea8"
+    },
+    {
+      "path": "models/misalignment/tv1_a0_202762.npz",
+      "bytes": 448841,
+      "sha256": "ec7a53c88787e1a358da88e542f3e917b1ddc7158bb3a1699c7272cf37538585"
+    },
+    {
+      "path": "models/misalignment/tv1_a0_202763.json",
+      "bytes": 6610,
+      "sha256": "e06cb07d23af3bb6dd50011da0fc7a18454478fd7a0d970f8147a9b900c819da"
+    },
+    {
+      "path": "models/misalignment/tv1_a0_202763.npz",
+      "bytes": 448603,
+      "sha256": "60b7b73470ca65044253ee5167fabbbfd6d8cc1c8dcbc0cb76e47a6ffa7cd3ba"
+    },
+    {
+      "path": "models/misalignment/tv1_routing_202762.json",
+      "bytes": 1311,
+      "sha256": "b00daa4dcff42cf1f1c6b4663636c28230ab5ce926e0cd6049c7156d56d236b8"
+    },
+    {
+      "path": "models/misalignment/tv1_routing_202762.npz",
+      "bytes": 100961,
+      "sha256": "5ed0e192a060899882f70c6a17d9579bb3c4f55394f0f5d355d7f1722ef9ddf1"
+    },
+    {
+      "path": "models/misalignment/tv1_routing_202763.json",
+      "bytes": 1311,
+      "sha256": "62110d27058d0ac17772dcf6b7c5e3c8d2b9b8e94b094d64b9de717c4b4791eb"
+    },
+    {
+      "path": "models/misalignment/tv1_routing_202763.npz",
+      "bytes": 100923,
+      "sha256": "b41020ca8ba6b165dbef3db6b2c1bd08331e6ae9d6b1fc6c5071067a189bfa53"
+    },
+    {
+      "path": "models/structure/calibration.json",
+      "bytes": 2658,
+      "sha256": "51bc8bd3fcd6f849fd8938476fd8e3b49ec9ffbdf722bdd0c373537a52373b88"
+    },
+    {
+      "path": "models/structure/epoch_056.npz",
+      "bytes": 8260210,
+      "sha256": "d95ca2b7d1ea94e5720ac15f4961fe97643066a943039e7f5e710ec452dd8fe9"
+    },
+    {
+      "path": "models/structure/epoch_057.npz",
+      "bytes": 8260416,
+      "sha256": "205e1a1d24ec9483b1ff9b98a97d97afa6c5c1d0239deea3740e10ebe774ae7e"
+    },
+    {
+      "path": "models/structure/epoch_058.npz",
+      "bytes": 8260886,
+      "sha256": "bc621220eb107dd50ec10c4cfe02c7b546875d0d07964ec18c260acbe142aaca"
+    },
+    {
+      "path": "models/structure/epoch_059.npz",
+      "bytes": 8260733,
+      "sha256": "87ef49f5fc2ebcbf8746cd7a50d63b9c154d579e59a8ee2ccb8a0154fe488a43"
+    },
+    {
+      "path": "models/structure/epoch_060.npz",
+      "bytes": 8260671,
+      "sha256": "4437a60bc29890486f3df5e8b4889b72b9aa7565310aa028002801d77f0f2684"
+    },
+    {
+      "path": "models/structure/manifest.json",
+      "bytes": 2682,
+      "sha256": "7e4ad9760a8cd38126200775cf370d682a8d9658e2130a594f843f627126c0b4"
+    },
+    {
+      "path": "models/structure/prototypes_epoch_056.npz",
+      "bytes": 9713,
+      "sha256": "e31cb42b1f7b13b9aae3cb8905ad4e6d250201df99f2dabe234511b2e085e4c6"
+    },
+    {
+      "path": "models/structure/prototypes_epoch_057.npz",
+      "bytes": 9730,
+      "sha256": "a07244d36a8b006b946a7e8aefd01ae3942c9d9360383f0e9c49fef06f7f12d6"
+    },
+    {
+      "path": "models/structure/prototypes_epoch_058.npz",
+      "bytes": 9718,
+      "sha256": "91578197c07fb65b8383df17203cef34438598316f4bf88710633ae199a64782"
+    },
+    {
+      "path": "models/structure/prototypes_epoch_059.npz",
+      "bytes": 9721,
+      "sha256": "ad566e8119166428c113952dfaea479460894f29732db1bf4f34614591d8ba7d"
+    },
+    {
+      "path": "models/structure/prototypes_epoch_060.npz",
+      "bytes": 9730,
+      "sha256": "0a8f232a846cf0e731df376fa797db527d1c7f7c592b6d578f3b97fcdcb2b5f5"
+    },
+    {
+      "path": "models/unbalance/calibration.json",
+      "bytes": 1792,
+      "sha256": "6acc5c4c2f2567af747e65cf9c91c5b737f6dde7d17981a0c9d38219dcde6f8b"
+    },
+    {
+      "path": "models/unbalance/manifest.json",
+      "bytes": 1898,
+      "sha256": "aecc7da866cdba80daf64e701267ff65499ab264bd7b15e1bcf451601b5c9f27"
+    },
+    {
+      "path": "models/unbalance/seed_202731.npz",
+      "bytes": 13113,
+      "sha256": "b7f9edbc402e46ca4a4992bbda396f3bcf02ca6df799c1239c30c007069d790f"
+    },
+    {
+      "path": "models/unbalance/seed_202732.npz",
+      "bytes": 13100,
+      "sha256": "2aa0d0588d73c9d4c86b877ee9e05128536415a539da0ef7b11d3d98d4a34037"
+    },
+    {
+      "path": "models/unbalance/seed_202733.npz",
+      "bytes": 13117,
+      "sha256": "8e148071cb940c07fd7f0607f36234a65848502f5fd882e3b4e68996ef55ad6d"
+    },
+    {
+      "path": "models/unbalance/seed_202734.npz",
+      "bytes": 13123,
+      "sha256": "c2767a24ed1ecde4a24aaebb09a5df92d31344bdb68edea108bf33b4ece02044"
+    },
+    {
+      "path": "models/unbalance/seed_202735.npz",
+      "bytes": 13110,
+      "sha256": "5571b9c07d1266bc713f0d181d7b4ad2b42f28aab53875e7d3b9240bc593042a"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 526,
+      "sha256": "50c51dccfd29c56fa2f3afeb1822a1cb7e776b231e9d5dafeafcfbc3dd16638d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 2833,
+      "sha256": "037e451f7c320cc2d0d0168d95388afb535363782637b4d6bb77916ee9b9c870"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6983,
+      "sha256": "3b8c14de30d27b50a28d3d789bc2f9967cfb1b29ebe3d924075e409a2e7df12b"
+    },
+    {
+      "path": "requirements-cpu.txt",
+      "bytes": 245,
+      "sha256": "677394e13c5f87224ecf0dcbf01c6fe9fc62d032262124fda10c058afe5f35dd"
+    },
+    {
+      "path": "requirements-cuda113.txt",
+      "bytes": 257,
+      "sha256": "fe450c7c3618ab165191dd5e02815e762f9ccb7db783d5d59895204378e4e7ee"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 194,
+      "sha256": "1d8db0b5e30296611a7621a5ca9414172835f20c5708165d06dfbd52aff7b7e1"
+    },
+    {
+      "path": "scripts/check_frozen_results.py",
+      "bytes": 2802,
+      "sha256": "c1bb6520d7c61566e0c1516bb93054a8b6b822b3d9d7d5510620ff8a34cd8301"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "bytes": 3444,
+      "sha256": "468c22a84f6d18bb03b68556c5694ff1c9849f69440bc39fe3175db6cccb2726"
+    },
+    {
+      "path": "scripts/make_example.py",
+      "bytes": 1555,
+      "sha256": "47ca4a6d27bc5f6383f84218fdb63109df35fff5020bc0c90f0cbbfa2c3ed908"
+    },
+    {
+      "path": "scripts/predict.py",
+      "bytes": 3001,
+      "sha256": "ad8b5a408e419c78c6e7df4dbd341a05cecf53c8153e8cce708c81b34d40beb0"
+    },
+    {
+      "path": "scripts/report_environment.py",
+      "bytes": 579,
+      "sha256": "78173f369c4c96af8f3c9e2c2e47579e93dbd2a01b845eb98eb91b462f35ff99"
+    },
+    {
+      "path": "src/shaft_diagnosis/__init__.py",
+      "bytes": 97,
+      "sha256": "4f9968a4baa6348f01685b41bdff4f66a213980b869077971aa3c869c24467f8"
+    },
+    {
+      "path": "src/shaft_diagnosis/_metrics.py",
+      "bytes": 3376,
+      "sha256": "eb2a05b449a58039c44b5d7d61d2cdeac37b84fe55d0b1cb25ce670255189fa5"
+    },
+    {
+      "path": "src/shaft_diagnosis/_routing.py",
+      "bytes": 19812,
+      "sha256": "a91ec33a092f0a09c768ea357aed1f8a79032a65a37f1669a31d84d527b85933"
+    },
+    {
+      "path": "src/shaft_diagnosis/_temporal.py",
+      "bytes": 4082,
+      "sha256": "31d86f580a3c2fefa268638bf9e2c43caf37bce0847406167312343bd3e42cb5"
+    },
+    {
+      "path": "src/shaft_diagnosis/evaluation.py",
+      "bytes": 2260,
+      "sha256": "61e5d64d8458f286866fe782c793eedb0d74ade74ce24e1134f51aa31c21979f"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_acoustic.py",
+      "bytes": 8721,
+      "sha256": "0c67d8be7a74cc054bfcca053f78497365cdc46e25ef4920b01c199e00d75344"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_background.py",
+      "bytes": 172,
+      "sha256": "56ca57c885c9a9e34c1260d3243db256f98843491300d57c46d5ec55aaa13f83"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_baseline.py",
+      "bytes": 814,
+      "sha256": "6c0d8ff36fa30a630ce77d1bf8acefa4d8d8a488852b07d35d1322a56d85d561"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_carrier.py",
+      "bytes": 15002,
+      "sha256": "c9165c9454b273ab890326cca87aaf42b18367f7e7442d9755895f6d63a745cc"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_causal.py",
+      "bytes": 22279,
+      "sha256": "5df57b5338fb9c42f2f61f6eb13e3f0f7b9855c7b939683e7f3c2596964b8048"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_event_detection.py",
+      "bytes": 4172,
+      "sha256": "ea6aecaa504d83245e60395008db39e6898d4632a17fd83a633b781870251891"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_event_mask.py",
+      "bytes": 692,
+      "sha256": "865117303f56d287e6569d89b2ecb75e41e70cba07d492258601555bbbd01558"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_event_trace.py",
+      "bytes": 2266,
+      "sha256": "c4057427e6be30536108ac25af26f5b6e5736028f16388ce8ede287b2a2eef86"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_hierarchy.py",
+      "bytes": 6866,
+      "sha256": "014518cdcfbae5f0e00801a82973e7091b3077de6601c79a1b96d0acd5be9ebc"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_phase_detector.py",
+      "bytes": 5013,
+      "sha256": "2b41eccf2d0e48e934bc9a5c0a36eb4f51e24965c3767d8d01cc41ff75beb610"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_projective.py",
+      "bytes": 5704,
+      "sha256": "68894ecada17fee62dfc7ffb15e457d4af2c180a68c7922cdd49b19b036583de"
+    },
+    {
+      "path": "src/shaft_diagnosis/i_features_relations.py",
+      "bytes": 37733,
+      "sha256": "b7c5e701eb012bdd846e5cf2294dd115b46203bf132185e7f6767403a1336c1c"
+    },
+    {
+      "path": "src/shaft_diagnosis/impact.py",
+      "bytes": 10088,
+      "sha256": "0d745a5d34687709706773156b58d093bc77d41dace9334a824f212122a414ab"
+    },
+    {
+      "path": "src/shaft_diagnosis/integration.py",
+      "bytes": 8107,
+      "sha256": "f5a5f4e3cae3b39b55708dd8f8cf4d72d7f367ba81078e0ccf898172c9d2bfaf"
+    },
+    {
+      "path": "src/shaft_diagnosis/labels.py",
+      "bytes": 360,
+      "sha256": "d2b58a2a6af3731c4bfaace4145d2694d96be013c728ff7d4300d47bcea1f9c0"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_background.py",
+      "bytes": 4826,
+      "sha256": "37ab9a28116ea6cdb9f66e42e280dc49c6be367cfaa56e3d77699c2f53093fe8"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_events.py",
+      "bytes": 19486,
+      "sha256": "f850eddee5c608d25a015294b416b19f9785aa8fa52156908cf083e337d67f7c"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_k5.py",
+      "bytes": 1861,
+      "sha256": "43794e3aef2f1d52985ddce1e1af9ed6d6295ee395effe4447862e6ea5407d44"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_p0.py",
+      "bytes": 15710,
+      "sha256": "835389abfeeed4f61f41ac49d9399df78d886f635ef3a95bd8acd207a21be2e4"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_p1.py",
+      "bytes": 6904,
+      "sha256": "c9e95bfbfbf7e9a245abf2cb62fff2d4125592ba1c0ed44f974604950c8a8c20"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_p2.py",
+      "bytes": 19511,
+      "sha256": "6c347790d02a45e455901c0b2b75a2f4354001f56841fb212fe0471e13ee5a11"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_raw.py",
+      "bytes": 8417,
+      "sha256": "d6e3e4951b2e77b676db82b23b62204fce3b7e1bbed1d947ba27c7adc8850740"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_rotation.py",
+      "bytes": 2264,
+      "sha256": "87cb05cfeeb585495b0652382ad237f133e4c12a5e6e7db48917926a7c97ca10"
+    },
+    {
+      "path": "src/shaft_diagnosis/m_features_synchronous.py",
+      "bytes": 26407,
+      "sha256": "498ac2379a92679ad64ddab4eb0b65f168342053798cd95cf528c2e498fbcae6"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment.py",
+      "bytes": 15620,
+      "sha256": "c0bfed731b9090f99f5af8e89abec4ec1bedc67d9dd5a672f81549163dc63038"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment_anchors.py",
+      "bytes": 7309,
+      "sha256": "8539452f724d6544f4f8f5c17bb29308dfc5efb09c2a60e5b1853fac58751e81"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment_models.py",
+      "bytes": 29141,
+      "sha256": "270c6550d4b778a299d41684930fa83d557868ed7275897825e251dfc6c76a1b"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment_rotation_training.py",
+      "bytes": 12564,
+      "sha256": "044bace135cd4247518d590d332fafc275c68cc41d0d27bea201737487f3c693"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment_routes.py",
+      "bytes": 5448,
+      "sha256": "6197de7f0e9acbdc03384dd932633db5cff525bde6c091979e303c285ff95b14"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment_routing_loss.py",
+      "bytes": 2143,
+      "sha256": "32db43c264a65ad1100328c4a307ec4000d5a5e2514087c5e74586938449ac20"
+    },
+    {
+      "path": "src/shaft_diagnosis/misalignment_training.py",
+      "bytes": 5161,
+      "sha256": "b20cdd375119b9f912a98461f1143ff78cff160fcf1f643e92e19d2150b13963"
+    },
+    {
+      "path": "src/shaft_diagnosis/models_common.py",
+      "bytes": 5248,
+      "sha256": "49e1f98472a18e924f25a99cdafdd594e67b03f57552525a826d45f405a39bcd"
+    },
+    {
+      "path": "src/shaft_diagnosis/preprocessing.py",
+      "bytes": 9070,
+      "sha256": "256f15a0e2209915bcb7493862627bb428fa14091d0892f7a47463adc91386af"
+    },
+    {
+      "path": "src/shaft_diagnosis/regression.py",
+      "bytes": 11698,
+      "sha256": "728572fd53a7e7b99e56c0651bbb34d7633f51a6fb507b022512ffba3038924e"
+    },
+    {
+      "path": "src/shaft_diagnosis/runtime.py",
+      "bytes": 3962,
+      "sha256": "9ab3dcd9f29107dcd706589470394d3d0e318be87cb2af2ab29fdbf475b1a22a"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure.py",
+      "bytes": 6263,
+      "sha256": "d4ce346f0eb8caac5838c36c17106b6cfe3b4ef197de9e6e32bc88d9f92c7982"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure_decoder.py",
+      "bytes": 11115,
+      "sha256": "65f41dfec0ee3fd7a801b3877271feadf307b8895f15e83dfe4b938969c27063"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure_evidence.py",
+      "bytes": 1739,
+      "sha256": "f4a908b50349e0e2d1c9d599570d41861c13b4a49c430eec123bff1e3b7864ca"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure_losses.py",
+      "bytes": 9918,
+      "sha256": "fd53708a92cef44939ea653ecd84a06dfb484e0ab663009f06d7a1ff918630a3"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure_model.py",
+      "bytes": 2376,
+      "sha256": "23062304dbae00d63cc03e5185b99ee68e03eb653a9c462eaffa15d4105a9210"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure_targets.py",
+      "bytes": 3410,
+      "sha256": "c12c27c7521057591b14a36acf537227b9b323c53864d11d4bdec4c8a6c0fcdc"
+    },
+    {
+      "path": "src/shaft_diagnosis/structure_training.py",
+      "bytes": 16668,
+      "sha256": "52dee414a72e09ffac2c4674b8e8288780e88c5c283b60208fb8d4d350718cbb"
+    },
+    {
+      "path": "src/shaft_diagnosis/system.py",
+      "bytes": 6255,
+      "sha256": "3e0f83280efe5fc014dbd23d621bad8d814c3418fb3e4d19e6201398f984c774"
+    },
+    {
+      "path": "src/shaft_diagnosis/unbalance.py",
+      "bytes": 4549,
+      "sha256": "c1dee78e868a8f9723dfd84d6be56ccbcf35f9ab9d6063c78c4e010e9d0fece3"
+    },
+    {
+      "path": "src/shaft_diagnosis/unbalance_consensus.py",
+      "bytes": 4060,
+      "sha256": "f26f995784fea96f75d6f88dfba1ce86bf4e5006ee47d972c42929bbce31e216"
+    },
+    {
+      "path": "src/shaft_diagnosis/unbalance_features.py",
+      "bytes": 11642,
+      "sha256": "15b18e5c323dd9ca7aee13692539b6f21cf5fe1b065182c484a8aaa654832528"
+    },
+    {
+      "path": "src/shaft_diagnosis/unbalance_model.py",
+      "bytes": 6033,
+      "sha256": "fb574f222724ca96c3a9478e4755fdeb29e2c3a5af90cbee499cedbc48aa930d"
+    },
+    {
+      "path": "src/shaft_diagnosis/unbalance_output.py",
+      "bytes": 1183,
+      "sha256": "79901bae449729497eeffede44e09a2d5d43300b8706f34c5449df7947a62bfa"
+    },
+    {
+      "path": "tests/test_example.py",
+      "bytes": 1596,
+      "sha256": "e523f392915e732e0a48a739f21e7acd847cc2d975a427112c94538d30e8d672"
+    },
+    {
+      "path": "tests/test_fallbacks.py",
+      "bytes": 5154,
+      "sha256": "e608842ce993809e80f2ab14539179ca189eba61b3e2673b8614d8a59a90d99a"
+    },
+    {
+      "path": "tests/test_frozen_regression.py",
+      "bytes": 4906,
+      "sha256": "f2ae8be531acded81221a8fd23c4207a9d7f603d9bf7804cc2f8c82f5870e3e5"
+    },
+    {
+      "path": "tests/test_impact.py",
+      "bytes": 2844,
+      "sha256": "6f6f5eaeb56462c1ca43c198125c02dcde6c0ab2ea2b7bfeb038c99012f420cc"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "bytes": 3333,
+      "sha256": "8fe9ba7028ad7101d5cbd2c1542af2d932d519920d5f448062f2214efab25ca1"
+    },
+    {
+      "path": "tests/test_misalignment.py",
+      "bytes": 5009,
+      "sha256": "6c47c6c8b840792406685b54e297577a20046766257f2d14faaad75088cf594a"
+    },
+    {
+      "path": "tests/test_preprocessing.py",
+      "bytes": 1075,
+      "sha256": "c5453f412a0d754312e4f8cdb15e1fedc930f11819dae604a5605afcdf5ca7df"
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "bytes": 1428,
+      "sha256": "241f49d65e957acbff9bf1e1e10606464130803bcd8b1f46bc7de1f18a6fae31"
+    },
+    {
+      "path": "tests/test_structure.py",
+      "bytes": 3729,
+      "sha256": "0ca75f8521a9c1846ef0083aaadd79540b37edf86cc68d8adf79292613ae6c47"
+    },
+    {
+      "path": "tests/test_system.py",
+      "bytes": 3113,
+      "sha256": "48349811a1a4c3c7dc7f2aeb3f7f5d1735d2b7e2b137035778cb8e872260a8c7"
+    },
+    {
+      "path": "tests/test_unbalance.py",
+      "bytes": 1630,
+      "sha256": "eff0b81253734c648f8ebcb0d73e9c697740ded789d180042d60fec4cd4f3d9e"
+    }
+  ],
+  "sampled_complete_raw_inference_verified": true,
+  "full_dataset_raw_inference_verified": false,
+  "environment_evidence": "configs/runtime_evidence.json",
+  "frozen_regression": {
+    "runner": "scripts/check_frozen_results.py",
+    "documentation": "docs/REGRESSION.md",
+    "synthetic_reference": "configs/regression/synthetic_reference.json",
+    "frozen_endpoint_reference": "configs/regression/frozen_endpoint_reference.json",
+    "experimental_data_and_predictions_bundled": false,
+    "missing_authorized_bundle_is_pass": false
+  },
+  "publication_cleanup": {
+    "license_status": "effective",
+    "m_helper_requires_explicit_position_mode": true,
+    "fallbacks_report_warnings_without_changing_values": true,
+    "cpu_installation_profile": "requirements-cpu.txt",
+    "cuda_installation_profile": "requirements-cuda113.txt",
+    "minimum_example": "scripts/make_example.py",
+    "installation_documentation": "docs/INSTALL.md",
+    "clean_cpu_installation_verified": true
+  }
+}

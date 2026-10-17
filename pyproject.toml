@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shaft-diagnosis"
+version = "0.1.0"
+description = "Hierarchical compound-fault diagnosis for propulsion shaft systems"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Tingfeng Zhu"},
+    {name = "Xiaoming Ye"},
+    {name = "Wenyu Yang"},
+    {name = "Renming Yang"},
+]
+requires-python = ">=3.8,<3.11"
+dependencies = ["numpy==1.24.4", "scipy==1.10.1", "torch==1.11.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+# Optional CUDA 11.3 build; requires a compatible NVIDIA driver.
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu113
+-r requirements.txt
+torch==1.11.0+cu113
+typing_extensions==4.13.2
+setuptools==75.1.0
+wheel==0.44.0

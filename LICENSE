@@ -1,0 +1,67 @@
+# Non-Commercial Research License
+
+Copyright (c) 2026 Tingfeng Zhu.
+
+Effective date: 17 October 2026.
+
+## 1. Covered materials
+
+This license covers this project's code, accompanying configurations and
+documentation, and bundled numerical model assets, including weights,
+prototypes, source statistics and calibrations (the "Materials"). Experimental
+datasets and third-party components are excluded.
+
+## 2. Non-commercial research permission
+
+Subject to these terms, users receive a non-exclusive, royalty-free
+permission to use, copy, modify and redistribute the Materials solely for
+non-commercial research, including reproducibility studies, evaluation and
+benchmarking. This permission also covers modifications and fine-tuned
+versions of the supplied model weights, under the same conditions.
+
+Non-commercial research means scientific investigation not directed toward
+commercial advantage or monetary compensation. It excludes sale or licensing
+for a fee, paid services, commercial product development and operational
+business deployment. An organization's academic or nonprofit status alone
+does not establish that a particular use is non-commercial research.
+
+## 3. Redistribution and attribution
+
+Redistributed original or modified Materials must retain the copyright
+notice and this complete license. Modifications must be identified.
+Redistribution must preserve the non-commercial research restriction and
+must not purport to grant commercial-use rights in the original Materials.
+These conditions also apply to redistributed modified or fine-tuned
+versions of the supplied weights.
+
+Research publications and independently collected data are not required
+to adopt this license. The preferred scholarly citation is provided in
+`CITATION.cff`.
+
+## 4. Other uses
+
+Commercial use and other uses outside the permission above require
+separate written authorization from the relevant rights holders. Requests
+may be directed to Xiaoming Ye at `xmye@hust.edu.cn`; this contact information
+does not itself confer authority to approve a request.
+
+## 5. Exclusions and reserved rights
+
+Third-party dependencies remain subject to their own licenses. Access to
+experimental data is handled separately and is not granted by this license.
+No patent, trademark or endorsement rights are granted. Rights not
+expressly granted remain reserved. These terms do not limit
+uses otherwise permitted by applicable law.
+
+## 6. Warranty and responsibility
+
+The Materials are provided "AS IS", without warranties, to the extent
+permitted by applicable law. Users are responsible for validating the
+Materials for their intended research. To the extent permitted by law, the
+rights holders are not liable for damages arising from use of the
+Materials.
+
+---
+
+This is a custom non-commercial research license, not an OSI-approved
+open-source license.

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the released implementation."
+type: software
+title: "Hierarchical zero-shot compound-fault diagnosis for marine propulsion shaft systems via structure-conditioned attribute inference"
+version: 0.1.0
+repository-code: "https://github.com/zhutingfeng-526/zero-shot-shaft-diagnosis"
+authors:
+  - family-names: Zhu
+    given-names: Tingfeng
+  - family-names: Ye
+    given-names: Xiaoming
+  - family-names: Yang
+    given-names: Wenyu
+  - family-names: Yang
+    given-names: Renming
